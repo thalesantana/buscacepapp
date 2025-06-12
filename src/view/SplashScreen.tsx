@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Image, Text } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import { styles } from './styles/SplashScreen.styles';
 
 export default function SplashScreen({ navigation }: any) {
@@ -7,7 +7,7 @@ export default function SplashScreen({ navigation }: any) {
     setTimeout(() => {
       navigation.replace('Home');
     }, 2000);
-  }, [navigation]);
+  }, []);
 
   return (
     <View style={styles.container}>
